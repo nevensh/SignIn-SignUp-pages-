@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 600px) {
 
-    #divmain {
+    .divmain {
         width: 100%;
     }
 }
