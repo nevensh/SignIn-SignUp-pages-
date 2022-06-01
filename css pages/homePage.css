@@ -33,6 +33,7 @@ body {
     border-radius: 20px;
     box-shadow: 1px 1px 5px 5px white;
     text-align: center;
+    transition: 3s;
 }
 
 .glow-on-hover {
