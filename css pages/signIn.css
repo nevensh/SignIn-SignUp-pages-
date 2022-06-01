@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Grape+Nuts&family=Josefin+Sans:ital@0;1&family=Macondo&family=Odibee+Sans&family=Plus+Jakarta+Sans:wght@200&display=swap');
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 90%;
+    }
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Images/background\ homePage.jpg);
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.container {
+    width: 500px;
+    height: 550px;
+    background-color: black;
+    z-index: 1;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 5px white;
+    text-align: center;
+    color: white;
+    transition: 2s;
+}
+.header{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-size: 26px;
+}
+.header:hover{
+    font-size: 32px;
+}
+h1 {
+color: white;
+font-family: 'Tiro Kannada', serif;
+}
+.h1:hover{
+    color: deepskyblue;
+}
+.inputs{
+    padding-bottom: 30px;
+    
+}
+.firstInput{
+    padding-bottom: 10px;
+    
+}
+.input1{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+.input2{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+.Remember{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.Remember:hover{
+    font-size: 26px;
+}
+.swimmingCreate{
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+.swimclub{
+    padding-bottom: 10px;
+}
+.swimclub:hover{
+    font-size: 26px;
+}
+.create{
+ text-decoration: none;
+ color: white;
+}
+.create:hover{
+    color: blue;
+   font-size: 26px;
+}
+.btn {
+width: 130px;
+height: 40px;
+font-size: 20px;
+border: solid;
+font-weight: bolder;
+border-color: deepskyblue;
+color:deepskyblue ;
+background-color: white;
+border-radius: 10px;
+font-family: 'Tiro Kannada', serif;
+margin-top: 20px;
+}
+.btn:hover{
+font-size: 28px;
+   background-color: deepskyblue;
+   border-color: white;
+   color: white;
+   transition: 2s;
+  
+}
+img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+   animation-name: shake;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg);  }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
