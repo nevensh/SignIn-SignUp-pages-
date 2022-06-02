@@ -1,0 +1,129 @@
+@media screen and (max-width: 600px) {
+
+    .DivMain{
+        width: 100%;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(57,60,143);
+}
+
+.signUp{
+    width: 500px;
+    height: 600px;
+    /* background-color: black; */
+    z-index: 1;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 5px  deepskyblue;
+    text-align: center;
+    transition: 3s;
+    color: white;
+    position: relative;
+    margin-right: 400px;
+   
+}
+h1{
+/* margin-top: 30px; */
+padding-top: 20px;
+margin-bottom: 30px;
+font-size: 35px;
+color: black;
+}
+h1:hover{
+    font-size: 45px; 
+    animation-name: colorful;
+    animation-duration: 3s;
+}
+ @keyframes colorful {
+     0%{
+         color: white;
+     }
+     50%{
+         color: deepskyblue;
+         
+     }
+     100%{
+         color: grey;
+     }
+     
+ }
+ .input{
+     margin-bottom: 10px;
+     width: 220px;
+     height: 40px;
+     border-radius: 5px;
+     border-color: black;
+    border-width: 5px;
+    
+ }
+.input:hover{
+    animation-name: lining;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-play-state: running;
+   transition: 3s;
+}
+@keyframes lining {
+ 0%{
+     border-color:  deepskyblue;
+ }   
+ 100%{
+     border-color: blue;
+ }
+}
+
+ .checkbox{
+     margin-bottom: 20px;
+     margin-top: 20px;
+     color: black;
+     font-weight: bolder;
+ }
+ .checkbox:hover{
+     font-size: 22px;
+ }
+ button{
+     margin-bottom: 15px;
+     width: 120px;
+     height: 40px;
+     border-radius: 3px;
+     font-weight: bolder;
+     border-color: black;
+     color :white ;
+     background-color: white;
+     font-size: 22px;
+     background-color: black;
+ }
+ button:hover{
+    font-size: 28px;
+       background-color: deepskyblue;
+       border-color: white;
+       color: white;
+       transition: 2s;
+      
+    }
+    .copyright{
+        color: black;
+    }
+    img{
+        position: relative;
+        margin-top: -600px;
+        margin-left: 440px;
+    }
