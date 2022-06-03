@@ -34,8 +34,16 @@ body {
     box-shadow: 1px 1px 5px 5px white;
     text-align: center;
     transition: 3s;
+    animation: 1s ease-out 0s 1 slideInLeft;
 }
-
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 .glow-on-hover {
     width: 220px;
     height: 50px;
