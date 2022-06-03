@@ -37,7 +37,16 @@ body {
     text-align: center;
     color: white;
     transition: 2s;
+    animation: 1s ease-out 0s 1 slideInLeft;
 }
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 .header{
     padding-top: 40px;
     padding-bottom: 50px;
