@@ -159,7 +159,8 @@ function capital_letter_check(user_password){
 
 if(user_password.toLowerCase() != user_password){
    console.log("true capital")
-   document.getElementById("capital_letter").style.color='green'
+   document.getElementById("capital_letter").style.color='green';
+   return true ;
 }
 else {
    console.log("false capital")
@@ -172,7 +173,8 @@ function small_letter_check(user_password){
 
 if(user_password.toUpperCase() != user_password){
    console.log("true smalls")
-   document.getElementById("lowercase_letter").style.color='green'
+   document.getElementById("lowercase_letter").style.color='green';
+   return true ;
 }
 else{
    console.log("false smalls");
@@ -186,7 +188,8 @@ function number_check(user_password){
 let regex = /\d/;
 if(regex.test(user_password)){
    console.log("we have a number")
-   document.getElementById("number").style.color='green'
+   document.getElementById("number").style.color='green';
+   return true ;
 }
 else{
    console.log("no numbers");
@@ -194,7 +197,6 @@ else{
 }
 return;
 }
-
 
 
 function password_validation(){//main function to check passport validation 
