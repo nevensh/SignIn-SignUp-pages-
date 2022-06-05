@@ -88,8 +88,8 @@ font-family: 'Tiro Kannada', serif;
     font-size: 26px;
 }
 .swimmingCreate{
-    padding-bottom: 40px;
-    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 10px;
 }
 .swimclub{
     padding-bottom: 10px;
@@ -117,6 +117,7 @@ background-color: white;
 border-radius: 10px;
 font-family: 'Tiro Kannada', serif;
 margin-top: 20px;
+margin-bottom: 20px;
 }
 .btn:hover{
 font-size: 28px;
@@ -151,3 +152,13 @@ img{
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+
+  .forgetpsw{
+    text-decoration: none;
+    color: white;
+}
+.forgetpsw:hover{
+color: blue;
+ font-size: 26px;
+}
+

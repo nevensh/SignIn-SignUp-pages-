@@ -64,14 +64,16 @@ else{
 
 //after we done frome validation , we organize the data in array
 let user=[];
-    
-user[0]=First_Name.value;
-user[1]=Last_Name.value;
-user[2]= Age.value;
-user[3]=Area_code.value+Phone_number.value;
-user[4]=Email_Adress.value;
-user[5]=Password.value;
-
+let obj ;
+obj = {
+    Fname : First_Name.value,
+    Lname : Last_Name.value ,
+    age : Age.value,
+    areaCode :Area_code.value+Phone_number.value,
+    emaiil : Email_Adress.value,
+    pssw :Password.value ,
+}    
+user.push(obj);
 console.log(user);//to check the array is correct, just additional checking
 
 //here we send the array to local storage  
