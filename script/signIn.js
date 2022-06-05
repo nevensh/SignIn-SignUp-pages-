@@ -1,4 +1,3 @@
-
 arr = [];
 document.getElementById("btnn").addEventListener("click", () => {
     let mail = document.getElementById("Email");
