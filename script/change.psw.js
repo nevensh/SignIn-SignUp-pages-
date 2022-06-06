@@ -15,7 +15,7 @@ alert("one of the inputs is empty");
 //the terms of new password are checked on the function password_validation() bellow
 
 else if( new_password.value !=new_confirm.value){
-    alert("new password is not Similar to confirm passport ")
+    alert("new password is not Similar to confirm password ")
 }
 
     else{//now we update password value in localstorage 
