@@ -1,52 +1,53 @@
-
-document.getElementById("btnn").addEventListener("click",LogIn);
-
-function LogIn() {
-    let maiill = document.getElementById("Email");
-    let pasw = document.getElementById("psw");
-
-    let err = false;
-    let emailValid = false;
-    let passwordValid = pasw.value != null && pasw.value != "" ? true : false;
-
-    if (maiill.value != null && maiill.value != "")
-        emailValid = validateEmail(maiill.value);
-
-    if (emailValid && passwordValid) {
-        let user = {
-            Email: maiill.value,
-            Password: pasw.value
-        }
-
-        if (userExist(user)) {
-            setCookie('cookie' , maiill.value , 7);
-            window.location.replace("./swimming.site.html");
-        } else err = true;
+arr = [];
+document.getElementById("btnn").addEventListener("click", () => {
+    let mail = document.getElementById("Email");
+    let psww = document.getElementById("psw");
+    if (mail.value == "" || mail.value == null) {
+        alert("maissing email");
     }
-    else err = true;
-}
-
-function validateEmail(email) {
-    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-    if (email.match(validRegex)) {
-        return true;
-    } else {
-        return false;
+    else if (psww.value == "" || psww.value == null) {
+        alert("missing password");
     }
-}
+    else {
+        Getdata();
+        checkingPswMail();
+        setCookie('cookie' , mail.value , 7);
+    }
 
-function userExist(user) {
-    if (localStorage.getItem("user")) {
-        let usersList = JSON.parse(localStorage.getItem("user"));
-        for (const obj of usersList) {
-            if (obj.Email == user.emaiil && obj.Password == user.pssw) 
-            return true;
+    function Getdata() {
+        if (localStorage.getItem("user")) {
+            arr = JSON.parse(localStorage.getItem("user"));
         }
     }
-    return false;
-}
 
+    function checkingPswMail() {
+        let istrue = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (mail.value == arr[i].emaiil && psww.value == arr[i].pssw) {
+                istrue.push(true);
+            }
+            else {
+                istrue.push(false);
+            }
+        }
+
+        for (let i = 0; i < istrue.length; i++) {
+            if (istrue[i] == true) {
+                window.location.replace("./swimming.site.html");
+                break;
+            }
+            else {
+                alert("wrong");
+                break;
+            }
+        }
+
+    }
+
+    mail.value == "";
+    psww.value == "";
+
+});
 
 
 function setCookie(name,mail,days) {   // to save the data in the cookies
