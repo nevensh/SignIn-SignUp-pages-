@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +7,43 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css pages/signup.css">
 </head>
+<body>
+    <div class="DivMain">
+    <div> <h1> Create a new account</h1></div>
+    <div><input class="input" type="text" placeholder="First Name" id="First_Name"></div>
+    <div><input class="input" type="text" placeholder="Last Name" id="Last_Name"></div>
+    <div><input  class="input" type="number" placeholder="Age" id="Age"></div>
 
-<div>Create a new account</div>
-<div><input type="text" placeholder="First Name" id="first_name"></div>
-<div><input type="text" placeholder="Last Name" id="last_name"></div>
-<div><input type="number" placeholder="Age" id="age"></div>
-<div><input type="tel" placeholder="Phone number" id="Phone_number"></div>
-<div><input type="email" placeholder="Email Adress" id="email"></div>
-<div><input type="password" placeholder="Enter password" id="password"></div>
-<div><input type="password" placeholder="Confirm password" id="confirm_password"></div>
-<div><input type="checkbox" id="myCheck">I accept the Terms & Conditions</div>
-<div><button>Sign Up</button>
-<div id="text">copyright <span>&copy;</span> Team4</div>
+    <div>
+        <select class="select1"  id="Area_code">
+            <option value="">Prefix</option>
+            <option value="050">050</option>
+            <option value="051">051</option>
+            <option value="052">052</option>
+            <option value="053">053</option>
+            <option value="054">054</option>
+            <option value="055">055</option>
+            <option value="058">058</option>
+        </select>
+        <input class="inputt" type="tel" placeholder="Phone number" id="Phone_number">
+    </div>
 
+    <div><input  class="input" type="email" placeholder="Email Adress" id="Email_Adress"></div>
+    <div><input  class="input" type="password" placeholder="Enter password" id="Password" onchange="password_validation()" ></div>
+    <div><input  class="input" type="password" placeholder="Confirm password" id="confirm_password"></div>
+    <div class="ulDiv">
+       <ul>
+       <li id="length">the password must be at least 8 characters</li>
+       <li  id="capital_letter">The password must contain at least one  uppercase letter  </li>
+        <li id="lowercase_letter" >The password must contain at least one lowercase letter</li>
+        <li id="number" >The password must contain at least one number</li>
+    </ul>
+    </div>
+    <div><input class="checkbox" type="checkbox" name="" id="terms_check"> I accept the Terms & Conditions</div>
+    <button onclick="save_to_local()"> Sign Up </button>
+    
+</div>
 
-
+    <script src="/script/script.signUp.js"></script>
 </body>
-
-
 </html>
