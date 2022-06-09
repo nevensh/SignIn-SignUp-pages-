@@ -39,4 +39,4 @@ If you have any questions or comments, you can open a issue or leave a comment.
 ***
 ## Contributors
 
-This project was built by the talented students of development : **Ashraf**, **Neven**, **Rawad**, **Nareen**, **Omar**
+This project was built by the talented students of development : **Neven**, **Ashraf**, **Rawad**, **Nareen**, **Omar**
